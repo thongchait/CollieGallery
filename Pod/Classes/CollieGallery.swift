@@ -163,7 +163,7 @@ open class CollieGallery: UIViewController, UIScrollViewDelegate, CollieGalleryV
         pagingScrollView.delegate = nil
         
         if let d = delegate {
-            d.onDismiss()
+            d.onDismiss!()
         }
     }
     
