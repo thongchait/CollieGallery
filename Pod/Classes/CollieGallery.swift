@@ -161,6 +161,10 @@ open class CollieGallery: UIViewController, UIScrollViewDelegate, CollieGalleryV
         }
         
         pagingScrollView.delegate = nil
+        
+        if let d = delegate {
+            d.onDismiss()
+        }
     }
     
     open override func didReceiveMemoryWarning() {
